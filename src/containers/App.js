@@ -13,7 +13,7 @@ function App() {
 
       <body>
       
-        <InfoCard/>
+        <CardSlider/>
 
 
       </body>
