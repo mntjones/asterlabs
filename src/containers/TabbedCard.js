@@ -6,7 +6,7 @@ class TabbedCard extends Component {
 
 	constructor(props) {
 		super(props);
-		this.state {current_index: this.props.index || 0};
+		this.state {current_index: this.props.current_index || 0; }
 
 	}
 
@@ -30,3 +30,5 @@ class TabbedCard extends Component {
 		)
 	}
 }
+
+export default TabbedCard;
