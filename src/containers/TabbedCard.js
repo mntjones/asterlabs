@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import TabContent from '../components/TabContent.js'
 
 var cns = require("classnames");
 
@@ -6,7 +7,9 @@ class TabbedCard extends Component {
 
 	constructor(props) {
 		super(props);
-		this.state {current_index: this.props.current_index || 0; }
+		this.state = {
+			current_index: this.props.current_index || 0
+		}
 
 	}
 
@@ -26,6 +29,8 @@ class TabbedCard extends Component {
 				<li onClick={self.handleClick}>
           <a className={className} href="#">{child.props.display}</a>
         </li>
+
+
 
 		)
 	}
