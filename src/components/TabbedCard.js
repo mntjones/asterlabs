@@ -30,8 +30,6 @@ class TabbedCard extends Component {
           <a className={className} href="#">{child.props.display}</a>
         </li>
 
-
-
 		)
 	}
 }
