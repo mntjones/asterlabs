@@ -3,33 +3,29 @@ import React, { Component } from 'react';
 import { Motion, spring } from 'react-motion';
 import { AriaManager, AriaTab, AriaPanel, AriaTabList} from 'react-aria';
 import Measure from 'react-measure';
-import FluidContainer from 'react-fluid-container';
-// import TabContent from '../components/TabContent.js'
-// import TabbedCard from '../components/TabbedCard.js'
-
-// const { Component, Children, PropTypes } = React
-// const { Motion, spring } = ReactMotion
-// const { AriaManager, AriaToggle, AriaPopover, AriaTabList, AriaTab, AriaPanel, AriaItem } = ReactARIA
+//import FluidContainer from 'react-fluid-container';
 
 const fastSpring = { stiffness: 400, damping: 40 }
 
 class TabbedCardContainer extends Component {
+
   constructor(props) {
     super(props)
     this.state = {
       tabs: [{
         id: 't1',
         title: <strong>What is a 529?</strong>,
-        panel: <div><p>Bacon ipsum dolor amet pork prosciutto tail ground round cow pancetta ham beef.  Brisket cupim shoulder drumstick turkey sausage cow pork beef pig venison boudin.  Ham hock bacon hamburger alcatra boudin shank shankle porchetta short ribs.  Jowl shank shoulder, pork belly tail ham hock ribeye fatback sirloin doner beef swine ground round meatball hamburger.</p><p>Venison pork turkey jerky pig.  Kevin andouille pastrami, ham hock sausage landjaeger sirloin tri-tip spare ribs boudin kielbasa tenderloin bresaola.  Short loin ribeye biltong capicola salami tenderloin, fatback ground round rump sirloin meatloaf porchetta.  Pork loin alcatra short loin ham hock kevin salami beef ribs filet mignon leberkas.  Bresaola pork landjaeger, tail jowl t-bone corned beef.  Cupim ground round tail brisket, pork belly short loin t-bone.  Beef ribs pork chop kevin short ribs frankfurter alcatra ball tip ground round jerky.</p></div>
+        panel: <div><p>Bacon</p><p> tri-tip </p></div>
       }, {
         id: 't2',
         title: <strong>Why use a 529?</strong>,
-        panel: <div><p>Now that we know who you are, I know who I am. I'm not a mistake! It all makes sense! In a comic, you know how you can tell who the arch-villain's going to be? He's the exact opposite of the hero. And most times they're friends, like you and me! I should've known way back when... You know why, David? Because of the kids. They called me Mr Glass.</p><p>Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends.</p></div>
+        panel: <div><p>Now that we know</p><p>  also </p></div>
       }, {
         id: 't3',
         title: <strong>Concerns about a 529?</strong>,
-        panel: <div><p>Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi dentevil vultus comedat cerebella viventium. Qui animated corpse, cricket bat max brucks terribilem incessu zomby. The voodoo sacerdos flesh eater, suscitat mortuos comedere carnem virus. Zonbi tattered for solum oculi eorum defunctis go lum cerebro.</p></div>
+        panel: <div><p>Zombie </p></div>
       }],
+
       activeId: 't1',
       height: 'auto'
     }
@@ -88,11 +84,8 @@ class TabbedCardContainer extends Component {
             }
           </Measure>
           <div className="tab-panels">
-            <FluidContainer
-              height="auto"
-              style={{ overflow: 'hidden' }}
-            >
-              <div>
+            
+
                 { tabs.map(({ id, panel }) =>
                   <AriaPanel
                     key={id}
@@ -103,8 +96,8 @@ class TabbedCardContainer extends Component {
                     {panel}
                   </AriaPanel>
                 )}
-              </div>
-            </FluidContainer>
+              
+            
           </div>
         </div>
       </AriaManager>
