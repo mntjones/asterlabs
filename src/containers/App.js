@@ -8,9 +8,9 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <p>
+          <h1>
             Should I open a 529?
-          </p>
+          </h1>
         </header>
 
         <body>
