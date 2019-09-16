@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import TabbedCardContainer from './TabbedCardContainer';
+import Calculator from './Calculator'
 import './App.css';
 
 class App extends Component {
@@ -15,6 +16,7 @@ class App extends Component {
 
         <body>
           < TabbedCardContainer />
+          < Calculator />
         </body>
       </div>
     );
