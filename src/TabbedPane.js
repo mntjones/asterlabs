@@ -1,7 +1,7 @@
 
 import React, { Component } from 'react';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
-import './TabbedCardContainer.css'
+import './style/TabbedPane.css'
 
 class TabbedCardContainer extends Component {
 

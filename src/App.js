@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import TabbedCardContainer from './TabbedCardContainer';
+import TabbedPane from './TabbedPane';
 import Calculator from './Calculator'
-import './App.css';
+import './style/App.css';
 
 class App extends Component {
   
@@ -15,7 +15,7 @@ class App extends Component {
         </header>
 
         <body>
-          < TabbedCardContainer />
+          < TabbedPane />
           < Calculator />
         </body>
       </div>
