@@ -50,6 +50,7 @@ class Calculator extends Component {
       <div className="Calculator">
       	<h1>529 Investment Calculator</h1><br/>
 
+      	<div className="form-div">
 				<form id="investment" onSubmit={this.handleOnSubmit}>
 					<label>Initial Investment (principal)</label> 
 					<input type="text" id="principal"/><br/> <br/>
@@ -60,12 +61,13 @@ class Calculator extends Component {
 					<br/>
 
 					<button type="submit">Compute future value</button> 
-					<br/><br/>
 					<button type="reset" value="Reset form" onClick={this.reset}>Reset</button>
-					<br/><br/><br/><br/>
+		
 				</form>
-
-				<h2 id="outputDiv"></h2>
+				<br/><br/>
+				<p id="outputDiv"></p>
+				</div>
+				
         
       </div>
     );

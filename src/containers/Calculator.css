@@ -1,0 +1,23 @@
+.Calculator {
+
+	background: #fff;
+	border: 1px solid #a5acb1;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.form-div {
+	background-color: #E7FEFE;
+	width: 450px; 
+	border: 2px solid; 
+	margin: 50px auto; 
+	padding: 50px;
+}
+
+label {
+	padding: 20px;
+}
+
+.form-div p {
+	background: #EEEFEF;
+}
