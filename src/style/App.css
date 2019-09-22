@@ -1,8 +1,10 @@
 .App {
   text-align: center;
+  background-image: url("free-vector-blue-grunge-background.jpg");
 }
 
 .App-header {
+  background-image: url("free-vector-blue-grunge-background.jpg");
   background-color: #E7FEFE;
   min-height: 25vh;
   display: flex;
