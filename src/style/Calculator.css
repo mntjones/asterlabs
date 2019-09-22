@@ -16,9 +16,30 @@
 }
 
 label {
-	padding: 20px;
+	display: block;
+}
+
+input {
+	height: 20px;
 }
 
 .form-div p {
 	background: #EEEFEF;
+}
+
+button {
+  background-color: #EEEFEF;
+  border: 2px solid; 
+  padding: 15px;
+  margin: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+}
+
+.buttons {
+	display: flex;
+  align-items: center;
+  justify-content: center;
 }

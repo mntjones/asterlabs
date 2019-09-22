@@ -35,7 +35,6 @@ function computeFutureValue(principal, annualInvestment, annualRate, years) {
 		
 	}
 	
- 
  	console.log(f)
 	return f.toFixed(2);
  
@@ -74,10 +73,10 @@ class Calculator extends Component {
 					<label>Number of years</label>
 					<input type="text" id="years"/><br/> <br/>
 					<br/>
-
+					<div className="buttons">
 					<button type="submit">Compute future value</button> 
 					<button type="reset" value="Reset form" onClick={this.reset}>Reset</button>
-		
+					</div>
 				</form>
 				<br/><br/>
 				<p id="outputDiv"></p>
