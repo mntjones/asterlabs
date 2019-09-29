@@ -34,6 +34,7 @@ const investment = [
 class ROIgraph extends React.Component {
   render() {
     return (
+    	<div class="graph">
     	<VictoryChart 
     		domainPadding={20}
     		theme={VictoryTheme.material}>
@@ -43,16 +44,26 @@ class ROIgraph extends React.Component {
         />
     		<VictoryAxis 
     			dependentAxis
-    			tickFormat={(x) => (`$${x}`)}
+    			tickFormat={(x) => (`$${x/1000}k`)}
         />
-	    	<VictoryBar
-	        data={earnings}
-	        // data accessor for x values
-	        x="year"
-	        // data accessor for y values
-	        y="earnings"
-	      />
+        <VictoryStack>
+		    	<VictoryBar
+		        data={investment}
+		        // data accessor for x values
+		        x="year"
+		        // data accessor for y values
+		        y="investment"
+		      />
+		      <VictoryBar
+		        data={earnings}
+		        // data accessor for x values
+		        x="year"
+		        // data accessor for y values
+		        y="earnings"
+		      />
+		    </VictoryStack>
 	    </VictoryChart>
+	    </div>
 		)
 	}
 }
