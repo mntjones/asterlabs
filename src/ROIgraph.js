@@ -34,13 +34,15 @@ const investment = [
 class ROIgraph extends React.Component {
   render() {
     return (
-    	<VictoryBar
-        data={earnings}
-        // data accessor for x values
-        x="year"
-        // data accessor for y values
-        y="earnings"
-      />
+    	<VictoryChart>
+	    	<VictoryBar
+	        data={earnings}
+	        // data accessor for x values
+	        x="year"
+	        // data accessor for y values
+	        y="earnings"
+	      />
+	    </VictoryChart>
 		)
 	}
 }
