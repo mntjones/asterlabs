@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import TabbedPane from './TabbedPane';
-import Calculator from './Calculator'
+import Calculator from './Calculator';
+import ROIgraph from './ROIgraph';
 import './style/App.css';
 
 class App extends Component {
@@ -17,6 +18,7 @@ class App extends Component {
         <body>
           < TabbedPane />
           < Calculator />
+          < ROIgraph />
         </body>
       </div>
     );

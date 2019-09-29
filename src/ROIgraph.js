@@ -2,6 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import * as V from 'victory';
 import Calculator from './Calculator.js'
+import { VictoryBar, VictoryChart, VictoryAxis,
+        VictoryTheme, VictoryStack } from 'victory';
 
 const earnings = [
   {year: 1, earnings: 1000},
@@ -28,3 +30,21 @@ const investment = [
   {year: 9, investment: 9800},
   {year: 10, investment: 11500}
 ];
+
+class ROIgraph extends React.Component {
+  render() {
+    return (
+    	<VictoryBar
+        data={earnings}
+        // data accessor for x values
+        x="year"
+        // data accessor for y values
+        y="earnings"
+      />
+		)
+	}
+}
+
+export default ROIgraph;
+
+
